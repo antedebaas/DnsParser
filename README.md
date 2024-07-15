@@ -1,7 +1,7 @@
 # Retrieve DNS records
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/antedebaas/dns.svg?style=flat-square)](https://packagist.org/packages/antedebaas/dns)
-[![Tests](https://github.com/antedebaas/dns/actions/workflows/tests.yml/badge.svg)](https://github.com/antedebaas/dns/actions/workflows/tests.yml)
+[![Tests](https://github.com/antedebaas/dns/actions/workflows/run-tests.yml/badge.svg)](https://github.com/antedebaas/dns/actions/workflows/run-tests.yml)
 [![Code style](https://github.com/antedebaas/dns/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/antedebaas/dns/actions/workflows/php-cs-fixer.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/antedebaas/dns.svg?style=flat-square)](https://packagist.org/packages/antedebaas/dns)
 
