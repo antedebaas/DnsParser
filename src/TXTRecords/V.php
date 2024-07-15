@@ -1,11 +1,13 @@
 <?php
+
 namespace Spatie\Dns\TXTRecords;
 
 use ReflectionClass;
 use Spatie\Dns\Exceptions\InvalidArgument;
 use Spatie\Macroable\Macroable;
 
-abstract class V {
+abstract class V
+{
     use Macroable {
         __call as protected macroCall;
     }
@@ -27,8 +29,8 @@ abstract class V {
 
             if (property_exists($this, $key)) {
                 $return = $this->cast($key, $value);
-                if(is_array($return)){
-                    foreach($return as $key => $subvalue){
+                if(is_array($return)) {
+                    foreach($return as $key => $subvalue) {
                         $this->$key = $subvalue;
                     }
                 } else {
@@ -37,7 +39,7 @@ abstract class V {
             }
         }
     }
-    
+
     public function __call(string $name, array $arguments)
     {
         if (property_exists($this, $name)) {

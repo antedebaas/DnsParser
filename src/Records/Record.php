@@ -39,9 +39,9 @@ abstract class Record implements Stringable
 
             if (property_exists($this, $key)) {
                 $return = $this->cast($key, $value);
-                if(is_array($return)){
-                    foreach($return as $key => $subvalue){
-                        if(!is_null($subvalue)){
+                if(is_array($return)) {
+                    foreach($return as $key => $subvalue) {
+                        if(! is_null($subvalue)) {
                             $this->$key = $subvalue;
                         }
                     }
@@ -158,6 +158,7 @@ abstract class Record implements Stringable
             return null;
         }
         $v = "Spatie\\Dns\\TXTRecords\\".mb_strtoupper($matches[1]);
+
         return new $v($matches[2]);
     }
 }
