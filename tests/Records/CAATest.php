@@ -2,8 +2,8 @@
 
 namespace Ante\DnsParcer\Test\Records;
 
-use PHPUnit\Framework\TestCase;
 use Ante\DnsParcer\Records\CAA;
+use PHPUnit\Framework\TestCase;
 
 class CAATest extends TestCase
 {

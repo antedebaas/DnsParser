@@ -2,8 +2,6 @@
 
 namespace Ante\DnsParcer\Test;
 
-use PHPUnit\Framework\TestCase;
-use ReflectionClass;
 use Ante\DnsParcer\Dns;
 use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
 use Ante\DnsParcer\Exceptions\InvalidArgument;
@@ -15,6 +13,8 @@ use Ante\DnsParcer\Records\Record;
 use Ante\DnsParcer\Records\SOA;
 use Ante\DnsParcer\Support\Collection;
 use Ante\DnsParcer\Test\TestClasses\CustomHandler;
+use PHPUnit\Framework\TestCase;
+use ReflectionClass;
 
 class DnsTest extends TestCase
 {

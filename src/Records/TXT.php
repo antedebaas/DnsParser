@@ -37,23 +37,26 @@ class TXT extends Record
     {
         $txt = $this->prepareText($value);
         $v = $this->castV($value);
-        if(!is_null($v)){
-            return array('txt' => $txt, 'v' => $v);
+        if(! is_null($v)) {
+            return ['txt' => $txt, 'v' => $v];
         }
+
         return $txt;
     }
 
     protected function castV(string $value): ?object
     {
         preg_match('/v=([a-zA-Z0-9]+);?\W(.*)/', $value, $matches);
-        if (is_null($matches) || empty($matches) || count($matches) < 3){
+        if (is_null($matches) || empty($matches) || count($matches) < 3) {
             $v = "Ante\\DnsParcer\\TXTRecords\\OTHER";
+
             return new $v($value);
         } else {
             $v = "Ante\\DnsParcer\\TXTRecords\\".mb_strtoupper($matches[1]);
+
             return new $v($matches[2]);
         }
-        
+
     }
 
     public function toArray()
@@ -64,7 +67,7 @@ class TXT extends Record
             'class' => $this->class,
             'type' => $this->type,
             'txt' => $this->txt,
-            'v' => $this->v
+            'v' => $this->v,
         ];
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Ante\DnsParcer\Test\Records;
 
-use PHPUnit\Framework\TestCase;
 use Ante\DnsParcer\Records\CNAME;
+use PHPUnit\Framework\TestCase;
 
 class CNAMETest extends TestCase
 {

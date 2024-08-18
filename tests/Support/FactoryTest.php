@@ -2,7 +2,6 @@
 
 namespace Ante\DnsParcer\Test\Support;
 
-use PHPUnit\Framework\TestCase;
 use Ante\DnsParcer\Records\A;
 use Ante\DnsParcer\Records\AAAA;
 use Ante\DnsParcer\Records\CAA;
@@ -14,6 +13,7 @@ use Ante\DnsParcer\Records\SOA;
 use Ante\DnsParcer\Records\SRV;
 use Ante\DnsParcer\Records\TXT;
 use Ante\DnsParcer\Support\Factory;
+use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase
 {

@@ -2,9 +2,9 @@
 
 namespace Ante\DnsParcer\Records;
 
-use ReflectionClass;
 use Ante\DnsParcer\Exceptions\InvalidArgument;
 use Ante\DnsParcer\Support\Domain;
+use ReflectionClass;
 use Spatie\Macroable\Macroable;
 use Stringable;
 

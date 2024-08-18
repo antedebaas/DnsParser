@@ -2,9 +2,9 @@
 
 namespace Ante\DnsParcer\Test\Records;
 
-use PHPUnit\Framework\TestCase;
 use Ante\DnsParcer\Records\A;
 use Ante\DnsParcer\Records\Record;
+use PHPUnit\Framework\TestCase;
 
 class RecordTest extends TestCase
 {

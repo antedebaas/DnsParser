@@ -2,8 +2,8 @@
 
 namespace Ante\DnsParcer\Test\Support;
 
-use PHPUnit\Framework\TestCase;
 use Ante\DnsParcer\Support\Types;
+use PHPUnit\Framework\TestCase;
 
 class TypesTest extends TestCase
 {

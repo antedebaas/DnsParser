@@ -2,8 +2,8 @@
 
 namespace Ante\DnsParcer\TXTRecords;
 
-use ReflectionClass;
 use Ante\DnsParcer\Exceptions\InvalidArgument;
+use ReflectionClass;
 use Spatie\Macroable\Macroable;
 
 abstract class V
