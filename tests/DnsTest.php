@@ -1,18 +1,18 @@
 <?php
 
-namespace Ante\DnsParcer\Test;
+namespace Ante\DnsParser\Test;
 
-use Ante\DnsParcer\Dns;
-use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
-use Ante\DnsParcer\Exceptions\InvalidArgument;
-use Ante\DnsParcer\Records\A;
-use Ante\DnsParcer\Records\MX;
-use Ante\DnsParcer\Records\NS;
-use Ante\DnsParcer\Records\PTR;
-use Ante\DnsParcer\Records\Record;
-use Ante\DnsParcer\Records\SOA;
-use Ante\DnsParcer\Support\Collection;
-use Ante\DnsParcer\Test\TestClasses\CustomHandler;
+use Ante\DnsParser\Dns;
+use Ante\DnsParser\Exceptions\CouldNotFetchDns;
+use Ante\DnsParser\Exceptions\InvalidArgument;
+use Ante\DnsParser\Records\A;
+use Ante\DnsParser\Records\MX;
+use Ante\DnsParser\Records\NS;
+use Ante\DnsParser\Records\PTR;
+use Ante\DnsParser\Records\Record;
+use Ante\DnsParser\Records\SOA;
+use Ante\DnsParser\Support\Collection;
+use Ante\DnsParser\Test\TestClasses\CustomHandler;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\Records;
+namespace Ante\DnsParser\Records;
 
 /**
  * @method string txt()
@@ -48,11 +48,11 @@ class TXT extends Record
     {
         preg_match('/v=([a-zA-Z0-9]+);?\W(.*)/', $value, $matches);
         if (is_null($matches) || empty($matches) || count($matches) < 3) {
-            $v = "Ante\\DnsParcer\\TXTRecords\\OTHER";
+            $v = "Ante\\DnsParser\\TXTRecords\\OTHER";
 
             return new $v($value);
         } else {
-            $v = "Ante\\DnsParcer\\TXTRecords\\".mb_strtoupper($matches[1]);
+            $v = "Ante\\DnsParser\\TXTRecords\\".mb_strtoupper($matches[1]);
 
             return new $v($matches[2]);
         }

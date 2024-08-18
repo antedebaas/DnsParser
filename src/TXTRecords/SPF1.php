@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\TXTRecords;
+namespace Ante\DnsParser\TXTRecords;
 
 class SPF1 extends V
 {

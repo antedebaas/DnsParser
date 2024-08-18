@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\CNAME;
+use Ante\DnsParser\Records\CNAME;
 use PHPUnit\Framework\TestCase;
 
 class CNAMETest extends TestCase

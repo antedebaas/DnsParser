@@ -1,9 +1,9 @@
 <?php
 
-namespace Ante\DnsParcer\Support;
+namespace Ante\DnsParser\Support;
 
-use Ante\DnsParcer\Handlers\UnsupportedRecordType;
-use Ante\DnsParcer\Records\Record;
+use Ante\DnsParser\Handlers\UnsupportedRecordType;
+use Ante\DnsParser\Records\Record;
 
 class Factory
 {
@@ -32,7 +32,7 @@ class Factory
     {
         $type = mb_strtoupper($type);
 
-        $class = "Ante\\DnsParcer\\Records\\{$type}";
+        $class = "Ante\\DnsParser\\Records\\{$type}";
 
         if (! in_array($type, Types::getTypes()) || ! class_exists($class)) {
             throw UnsupportedRecordType::make($type);

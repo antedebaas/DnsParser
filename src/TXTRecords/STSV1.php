@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\TXTRecords;
+namespace Ante\DnsParser\TXTRecords;
 
 class STSV1 extends V
 {

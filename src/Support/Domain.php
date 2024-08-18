@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Support;
+namespace Ante\DnsParser\Support;
 
-use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParser\Exceptions\InvalidArgument;
 
 class Domain
 {

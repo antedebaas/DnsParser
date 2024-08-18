@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\Records;
+namespace Ante\DnsParser\Records;
 
 /**
  * @method int flags()

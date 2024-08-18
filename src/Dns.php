@@ -1,16 +1,16 @@
 <?php
 
-namespace Ante\DnsParcer;
+namespace Ante\DnsParser;
 
-use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
-use Ante\DnsParcer\Exceptions\InvalidArgument;
-use Ante\DnsParcer\Handlers\Dig;
-use Ante\DnsParcer\Handlers\DnsGetRecord;
-use Ante\DnsParcer\Handlers\Handler;
-use Ante\DnsParcer\Support\Collection;
-use Ante\DnsParcer\Support\Domain;
-use Ante\DnsParcer\Support\Factory;
-use Ante\DnsParcer\Support\Types;
+use Ante\DnsParser\Exceptions\CouldNotFetchDns;
+use Ante\DnsParser\Exceptions\InvalidArgument;
+use Ante\DnsParser\Handlers\Dig;
+use Ante\DnsParser\Handlers\DnsGetRecord;
+use Ante\DnsParser\Handlers\Handler;
+use Ante\DnsParser\Support\Collection;
+use Ante\DnsParser\Support\Domain;
+use Ante\DnsParser\Support\Factory;
+use Ante\DnsParser\Support\Types;
 
 class Dns
 {

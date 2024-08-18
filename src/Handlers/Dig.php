@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Handlers;
+namespace Ante\DnsParser\Handlers;
 
-use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
+use Ante\DnsParser\Exceptions\CouldNotFetchDns;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 

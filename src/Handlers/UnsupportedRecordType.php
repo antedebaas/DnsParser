@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\Handlers;
+namespace Ante\DnsParser\Handlers;
 
 use Exception;
 

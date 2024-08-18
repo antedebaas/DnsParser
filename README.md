@@ -9,7 +9,7 @@ This package contains a class that can fetch DNS records.
 Its an extended version of Spatie\DNS as they want to keep their version minimal.
 
 ```php
-use Ante\DnsParcer\Dns;
+use Ante\DnsParser\Dns;
 
 $dns = new Dns();
 
@@ -49,7 +49,7 @@ composer require spatie/dns
 The class can get these record types: `A`, `AAAA`, `CNAME`, `NS`, `PTR`, `SOA`, `MX`, `SRV`, `TXT`, `DNSKEY`, `CAA`, `NAPTR`.
 
 ```php
-use Ante\DnsParcer\Dns;
+use Ante\DnsParser\Dns;
 
 $dns = new Dns();
 
@@ -61,7 +61,7 @@ $dns->getRecords('spatie.be', DNS_MX); // returns only MX records
 $dns->getRecords('spatie.be', DNS_A | DNS_AAAA); // returns both A and AAAA records
 ```
 
-`getRecords` will return an array with objects that implement the `Ante\DnsParcer\Records\Record` interface.
+`getRecords` will return an array with objects that implement the `Ante\DnsParser\Records\Record` interface.
 
 ## Working with DNS records
 
@@ -91,7 +91,7 @@ Some records have additional methods available. For example, records of type A [
 You can get records from a specific nameserver.
 
 ```php
-use Ante\DnsParcer\Dns;
+use Ante\DnsParser\Dns;
 
 (new Dns)
     ->useNameserver('ns1.openminds.be') // use ns1.openminds.be
@@ -103,9 +103,9 @@ use Ante\DnsParcer\Dns;
 When you have a string that contains a dns record, you can convert it to a `Record`
 
 ```php
-use \Ante\DnsParcer\Support\Factory();
+use \Ante\DnsParser\Support\Factory();
 
-// returns instance of \Ante\DnsParcer\Records\CNAME
+// returns instance of \Ante\DnsParser\Records\CNAME
 (new Factory())->guess('www.spatie.be.       300     IN      CNAME   spatie.be.');
 ```
 
@@ -115,12 +115,12 @@ A `Handler` is responsible for fetching DNS records of a certain type.
 
 By default, these handlers that ship with the package are used:
 
-- `Ante\DnsParcer\Handler\Dig`
-- `Ante\DnsParcer\Handler\DnsGetRecord`
+- `Ante\DnsParser\Handler\Dig`
+- `Ante\DnsParser\Handler\DnsGetRecord`
 
-You can create custom handlers. A valid handler is any class that extends from `Ante\DnsParcer\Handler\Handler`.
+You can create custom handlers. A valid handler is any class that extends from `Ante\DnsParser\Handler\Handler`.
 
-A custom handler class can be used by passing it to `useHandlers` on `Ante\DnsParcer\Dns`.
+A custom handler class can be used by passing it to `useHandlers` on `Ante\DnsParser\Dns`.
 
 ```php
 $results = $this->dns

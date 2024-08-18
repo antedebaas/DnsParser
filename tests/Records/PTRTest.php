@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\PTR;
+use Ante\DnsParser\Records\PTR;
 use PHPUnit\Framework\TestCase;
 
 class PTRTest extends TestCase

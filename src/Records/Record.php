@@ -1,9 +1,9 @@
 <?php
 
-namespace Ante\DnsParcer\Records;
+namespace Ante\DnsParser\Records;
 
-use Ante\DnsParcer\Exceptions\InvalidArgument;
-use Ante\DnsParcer\Support\Domain;
+use Ante\DnsParser\Exceptions\InvalidArgument;
+use Ante\DnsParser\Support\Domain;
 use ReflectionClass;
 use Spatie\Macroable\Macroable;
 use Stringable;
@@ -157,7 +157,7 @@ abstract class Record implements Stringable
         if (empty($matches)) {
             return null;
         }
-        $v = "Ante\\DnsParcer\\TXTRecords\\".mb_strtoupper($matches[1]);
+        $v = "Ante\\DnsParser\\TXTRecords\\".mb_strtoupper($matches[1]);
 
         return new $v($matches[2]);
     }

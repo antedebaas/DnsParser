@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Support;
+namespace Ante\DnsParser\Test\Support;
 
-use Ante\DnsParcer\Support\Domain;
+use Ante\DnsParser\Support\Domain;
 use PHPUnit\Framework\TestCase;
 
 class DomainTest extends TestCase

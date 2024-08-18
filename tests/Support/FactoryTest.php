@@ -1,18 +1,18 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Support;
+namespace Ante\DnsParser\Test\Support;
 
-use Ante\DnsParcer\Records\A;
-use Ante\DnsParcer\Records\AAAA;
-use Ante\DnsParcer\Records\CAA;
-use Ante\DnsParcer\Records\CNAME;
-use Ante\DnsParcer\Records\MX;
-use Ante\DnsParcer\Records\NS;
-use Ante\DnsParcer\Records\PTR;
-use Ante\DnsParcer\Records\SOA;
-use Ante\DnsParcer\Records\SRV;
-use Ante\DnsParcer\Records\TXT;
-use Ante\DnsParcer\Support\Factory;
+use Ante\DnsParser\Records\A;
+use Ante\DnsParser\Records\AAAA;
+use Ante\DnsParser\Records\CAA;
+use Ante\DnsParser\Records\CNAME;
+use Ante\DnsParser\Records\MX;
+use Ante\DnsParser\Records\NS;
+use Ante\DnsParser\Records\PTR;
+use Ante\DnsParser\Records\SOA;
+use Ante\DnsParser\Records\SRV;
+use Ante\DnsParser\Records\TXT;
+use Ante\DnsParser\Support\Factory;
 use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\NS;
+use Ante\DnsParser\Records\NS;
 use PHPUnit\Framework\TestCase;
 
 class NSTest extends TestCase

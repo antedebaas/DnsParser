@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\TXTRecords;
+namespace Ante\DnsParser\TXTRecords;
 
-use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParser\Exceptions\InvalidArgument;
 use ReflectionClass;
 use Spatie\Macroable\Macroable;
 

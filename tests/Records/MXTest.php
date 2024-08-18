@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\MX;
+use Ante\DnsParser\Records\MX;
 use PHPUnit\Framework\TestCase;
 
 class MXTest extends TestCase

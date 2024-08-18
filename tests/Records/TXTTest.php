@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\TXT;
+use Ante\DnsParser\Records\TXT;
 use PHPUnit\Framework\TestCase;
 
 class TXTTest extends TestCase

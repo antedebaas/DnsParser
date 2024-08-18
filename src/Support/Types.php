@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\Support;
+namespace Ante\DnsParser\Support;
 
 class Types
 {

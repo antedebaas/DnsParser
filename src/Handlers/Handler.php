@@ -1,10 +1,10 @@
 <?php
 
-namespace Ante\DnsParcer\Handlers;
+namespace Ante\DnsParser\Handlers;
 
-use Ante\DnsParcer\Exceptions\InvalidArgument;
-use Ante\DnsParcer\Records\Record;
-use Ante\DnsParcer\Support\Factory;
+use Ante\DnsParser\Exceptions\InvalidArgument;
+use Ante\DnsParser\Records\Record;
+use Ante\DnsParser\Support\Factory;
 
 abstract class Handler
 {
@@ -25,7 +25,7 @@ abstract class Handler
      * @param string $domain
      * @param int $flag
      * @param string $type
-     * @return \Ante\DnsParcer\Records\Record[]
+     * @return \Ante\DnsParser\Records\Record[]
      */
     abstract public function __invoke(string $domain, int $flag, string $type): array;
 

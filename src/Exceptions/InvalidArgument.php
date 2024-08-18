@@ -1,6 +1,6 @@
 <?php
 
-namespace Ante\DnsParcer\Exceptions;
+namespace Ante\DnsParser\Exceptions;
 
 use InvalidArgumentException;
 

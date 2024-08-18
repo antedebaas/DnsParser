@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\AAAA;
+use Ante\DnsParser\Records\AAAA;
 use PHPUnit\Framework\TestCase;
 
 class AAAATest extends TestCase

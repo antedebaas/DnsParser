@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\TestClasses;
+namespace Ante\DnsParser\Test\TestClasses;
 
-use Ante\DnsParcer\Handlers\Handler;
+use Ante\DnsParser\Handlers\Handler;
 
 class CustomHandler extends Handler
 {

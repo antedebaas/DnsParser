@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Support;
+namespace Ante\DnsParser\Test\Support;
 
-use Ante\DnsParcer\Support\Types;
+use Ante\DnsParser\Support\Types;
 use PHPUnit\Framework\TestCase;
 
 class TypesTest extends TestCase

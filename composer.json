@@ -1,8 +1,7 @@
 {
-    "name": "antedebaas/dns",
+    "name": "antedebaas/DnsParser",
     "description": "Retrieve DNS records",
     "keywords": [
-        "spatie",
         "php",
         "dns"
     ],
@@ -12,7 +11,7 @@
         {
             "name": "Ante de Baas",
             "email": "antedebaas@users.github.com",
-            "homepage": "https://github.com/antedebaas/dns",
+            "homepage": "https://github.com/antedebaas/DnsParser",
             "role": "Developer"
         },
         {
@@ -49,12 +48,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ante\\DnsParcer\\": "src"
+            "Ante\\DnsParser\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ante\\DnsParcer\\Test\\": "tests"
+            "Ante\\DnsParser\\Test\\": "tests"
         }
     },
     "scripts": {

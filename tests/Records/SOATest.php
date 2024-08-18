@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\SOA;
+use Ante\DnsParser\Records\SOA;
 use PHPUnit\Framework\TestCase;
 
 class SOATest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ante\DnsParcer\Test\Records;
+namespace Ante\DnsParser\Test\Records;
 
-use Ante\DnsParcer\Records\SRV;
+use Ante\DnsParser\Records\SRV;
 use PHPUnit\Framework\TestCase;
 
 class SRVTest extends TestCase
