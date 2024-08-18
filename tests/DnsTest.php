@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\Dns\Test;
+namespace Ante\DnsParcer\Test;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Spatie\Dns\Dns;
-use Spatie\Dns\Exceptions\CouldNotFetchDns;
-use Spatie\Dns\Exceptions\InvalidArgument;
-use Spatie\Dns\Records\A;
-use Spatie\Dns\Records\MX;
-use Spatie\Dns\Records\NS;
-use Spatie\Dns\Records\PTR;
-use Spatie\Dns\Records\Record;
-use Spatie\Dns\Records\SOA;
-use Spatie\Dns\Support\Collection;
-use Spatie\Dns\Test\TestClasses\CustomHandler;
+use Ante\DnsParcer\Dns;
+use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Records\A;
+use Ante\DnsParcer\Records\MX;
+use Ante\DnsParcer\Records\NS;
+use Ante\DnsParcer\Records\PTR;
+use Ante\DnsParcer\Records\Record;
+use Ante\DnsParcer\Records\SOA;
+use Ante\DnsParcer\Support\Collection;
+use Ante\DnsParcer\Test\TestClasses\CustomHandler;
 
 class DnsTest extends TestCase
 {

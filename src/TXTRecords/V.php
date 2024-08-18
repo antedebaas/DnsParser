@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\TXTRecords;
+namespace Ante\DnsParcer\TXTRecords;
 
 use ReflectionClass;
-use Spatie\Dns\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
 use Spatie\Macroable\Macroable;
 
 abstract class V

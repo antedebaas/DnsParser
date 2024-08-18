@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Dns\Handlers;
+namespace Ante\DnsParcer\Handlers;
 
-use Spatie\Dns\Exceptions\InvalidArgument;
-use Spatie\Dns\Records\Record;
-use Spatie\Dns\Support\Factory;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Records\Record;
+use Ante\DnsParcer\Support\Factory;
 
 abstract class Handler
 {
@@ -25,7 +25,7 @@ abstract class Handler
      * @param string $domain
      * @param int $flag
      * @param string $type
-     * @return \Spatie\Dns\Records\Record[]
+     * @return \Ante\DnsParcer\Records\Record[]
      */
     abstract public function __invoke(string $domain, int $flag, string $type): array;
 

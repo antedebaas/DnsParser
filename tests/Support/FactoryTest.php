@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\Dns\Test\Support;
+namespace Ante\DnsParcer\Test\Support;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Records\A;
-use Spatie\Dns\Records\AAAA;
-use Spatie\Dns\Records\CAA;
-use Spatie\Dns\Records\CNAME;
-use Spatie\Dns\Records\MX;
-use Spatie\Dns\Records\NS;
-use Spatie\Dns\Records\PTR;
-use Spatie\Dns\Records\SOA;
-use Spatie\Dns\Records\SRV;
-use Spatie\Dns\Records\TXT;
-use Spatie\Dns\Support\Factory;
+use Ante\DnsParcer\Records\A;
+use Ante\DnsParcer\Records\AAAA;
+use Ante\DnsParcer\Records\CAA;
+use Ante\DnsParcer\Records\CNAME;
+use Ante\DnsParcer\Records\MX;
+use Ante\DnsParcer\Records\NS;
+use Ante\DnsParcer\Records\PTR;
+use Ante\DnsParcer\Records\SOA;
+use Ante\DnsParcer\Records\SRV;
+use Ante\DnsParcer\Records\TXT;
+use Ante\DnsParcer\Support\Factory;
 
 class FactoryTest extends TestCase
 {

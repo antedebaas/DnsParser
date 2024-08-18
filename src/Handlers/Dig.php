@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Dns\Handlers;
+namespace Ante\DnsParcer\Handlers;
 
-use Spatie\Dns\Exceptions\CouldNotFetchDns;
+use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 

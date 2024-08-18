@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Records;
+namespace Ante\DnsParcer\Test\Records;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Records\CNAME;
+use Ante\DnsParcer\Records\CNAME;
 
 class CNAMETest extends TestCase
 {

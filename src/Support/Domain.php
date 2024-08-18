@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Dns\Support;
+namespace Ante\DnsParcer\Support;
 
-use Spatie\Dns\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
 
 class Domain
 {

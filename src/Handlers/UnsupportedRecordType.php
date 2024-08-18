@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\Handlers;
+namespace Ante\DnsParcer\Handlers;
 
 use Exception;
 

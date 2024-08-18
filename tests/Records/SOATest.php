@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Records;
+namespace Ante\DnsParcer\Test\Records;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Records\SOA;
+use Ante\DnsParcer\Records\SOA;
 
 class SOATest extends TestCase
 {

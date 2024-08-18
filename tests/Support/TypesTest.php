@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Support;
+namespace Ante\DnsParcer\Test\Support;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Support\Types;
+use Ante\DnsParcer\Support\Types;
 
 class TypesTest extends TestCase
 {

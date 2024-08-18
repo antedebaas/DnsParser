@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\TXTRecords;
+namespace Ante\DnsParcer\TXTRecords;
 
 class TLSRPTV1 extends V
 {

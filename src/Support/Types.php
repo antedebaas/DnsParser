@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\Support;
+namespace Ante\DnsParcer\Support;
 
 class Types
 {

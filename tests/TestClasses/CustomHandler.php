@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Dns\Test\TestClasses;
+namespace Ante\DnsParcer\Test\TestClasses;
 
-use Spatie\Dns\Handlers\Handler;
+use Ante\DnsParcer\Handlers\Handler;
 
 class CustomHandler extends Handler
 {

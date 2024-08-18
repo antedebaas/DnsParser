@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Dns\Records;
+namespace Ante\DnsParcer\Records;
 
 use ReflectionClass;
-use Spatie\Dns\Exceptions\InvalidArgument;
-use Spatie\Dns\Support\Domain;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Support\Domain;
 use Spatie\Macroable\Macroable;
 use Stringable;
 
@@ -157,7 +157,7 @@ abstract class Record implements Stringable
         if (empty($matches)) {
             return null;
         }
-        $v = "Spatie\\Dns\\TXTRecords\\".mb_strtoupper($matches[1]);
+        $v = "Ante\\DnsParcer\\TXTRecords\\".mb_strtoupper($matches[1]);
 
         return new $v($matches[2]);
     }

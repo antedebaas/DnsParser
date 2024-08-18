@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\Records;
+namespace Ante\DnsParcer\Records;
 
 /**
  * @method string mname()

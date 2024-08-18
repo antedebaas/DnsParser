@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Records;
+namespace Ante\DnsParcer\Test\Records;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Records\MX;
+use Ante\DnsParcer\Records\MX;
 
 class MXTest extends TestCase
 {

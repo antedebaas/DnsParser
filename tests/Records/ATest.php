@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Records;
+namespace Ante\DnsParcer\Test\Records;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Records\A;
+use Ante\DnsParcer\Records\A;
 
 class ATest extends TestCase
 {

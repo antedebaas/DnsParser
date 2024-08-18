@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\TXTRecords;
+namespace Ante\DnsParcer\TXTRecords;
 
 class SPF1 extends V
 {

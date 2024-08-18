@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\Dns;
+namespace Ante\DnsParcer;
 
-use Spatie\Dns\Exceptions\CouldNotFetchDns;
-use Spatie\Dns\Exceptions\InvalidArgument;
-use Spatie\Dns\Handlers\Dig;
-use Spatie\Dns\Handlers\DnsGetRecord;
-use Spatie\Dns\Handlers\Handler;
-use Spatie\Dns\Support\Collection;
-use Spatie\Dns\Support\Domain;
-use Spatie\Dns\Support\Factory;
-use Spatie\Dns\Support\Types;
+use Ante\DnsParcer\Exceptions\CouldNotFetchDns;
+use Ante\DnsParcer\Exceptions\InvalidArgument;
+use Ante\DnsParcer\Handlers\Dig;
+use Ante\DnsParcer\Handlers\DnsGetRecord;
+use Ante\DnsParcer\Handlers\Handler;
+use Ante\DnsParcer\Support\Collection;
+use Ante\DnsParcer\Support\Domain;
+use Ante\DnsParcer\Support\Factory;
+use Ante\DnsParcer\Support\Types;
 
 class Dns
 {

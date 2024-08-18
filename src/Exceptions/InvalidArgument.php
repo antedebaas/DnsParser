@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Dns\Exceptions;
+namespace Ante\DnsParcer\Exceptions;
 
 use InvalidArgumentException;
 

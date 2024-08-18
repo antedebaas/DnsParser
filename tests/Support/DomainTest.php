@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Test\Support;
+namespace Ante\DnsParcer\Test\Support;
 
 use PHPUnit\Framework\TestCase;
-use Spatie\Dns\Support\Domain;
+use Ante\DnsParcer\Support\Domain;
 
 class DomainTest extends TestCase
 {

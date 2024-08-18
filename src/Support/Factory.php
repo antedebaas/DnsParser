@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Dns\Support;
+namespace Ante\DnsParcer\Support;
 
-use Spatie\Dns\Handlers\UnsupportedRecordType;
-use Spatie\Dns\Records\Record;
+use Ante\DnsParcer\Handlers\UnsupportedRecordType;
+use Ante\DnsParcer\Records\Record;
 
 class Factory
 {
@@ -32,7 +32,7 @@ class Factory
     {
         $type = mb_strtoupper($type);
 
-        $class = "Spatie\\Dns\\Records\\{$type}";
+        $class = "Ante\\DnsParcer\\Records\\{$type}";
 
         if (! in_array($type, Types::getTypes()) || ! class_exists($class)) {
             throw UnsupportedRecordType::make($type);

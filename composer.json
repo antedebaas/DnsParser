@@ -49,12 +49,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Dns\\": "src"
+            "Ante\\DnsParcer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Dns\\Test\\": "tests"
+            "Ante\\DnsParcer\\Test\\": "tests"
         }
     },
     "scripts": {

@@ -9,7 +9,7 @@ This package contains a class that can fetch DNS records.
 Its an extended version of Spatie\DNS as they want to keep their version minimal.
 
 ```php
-use Spatie\Dns\Dns;
+use Ante\DnsParcer\Dns;
 
 $dns = new Dns();
 
@@ -49,7 +49,7 @@ composer require spatie/dns
 The class can get these record types: `A`, `AAAA`, `CNAME`, `NS`, `PTR`, `SOA`, `MX`, `SRV`, `TXT`, `DNSKEY`, `CAA`, `NAPTR`.
 
 ```php
-use Spatie\Dns\Dns;
+use Ante\DnsParcer\Dns;
 
 $dns = new Dns();
 
@@ -61,7 +61,7 @@ $dns->getRecords('spatie.be', DNS_MX); // returns only MX records
 $dns->getRecords('spatie.be', DNS_A | DNS_AAAA); // returns both A and AAAA records
 ```
 
-`getRecords` will return an array with objects that implement the `Spatie\Dns\Records\Record` interface.
+`getRecords` will return an array with objects that implement the `Ante\DnsParcer\Records\Record` interface.
 
 ## Working with DNS records
 
@@ -91,7 +91,7 @@ Some records have additional methods available. For example, records of type A [
 You can get records from a specific nameserver.
 
 ```php
-use Spatie\Dns\Dns;
+use Ante\DnsParcer\Dns;
 
 (new Dns)
     ->useNameserver('ns1.openminds.be') // use ns1.openminds.be
@@ -103,9 +103,9 @@ use Spatie\Dns\Dns;
 When you have a string that contains a dns record, you can convert it to a `Record`
 
 ```php
-use \Spatie\Dns\Support\Factory();
+use \Ante\DnsParcer\Support\Factory();
 
-// returns instance of \Spatie\Dns\Records\CNAME
+// returns instance of \Ante\DnsParcer\Records\CNAME
 (new Factory())->guess('www.spatie.be.       300     IN      CNAME   spatie.be.');
 ```
 
@@ -115,12 +115,12 @@ A `Handler` is responsible for fetching DNS records of a certain type.
 
 By default, these handlers that ship with the package are used:
 
-- `Spatie\Dns\Handler\Dig`
-- `Spatie\Dns\Handler\DnsGetRecord`
+- `Ante\DnsParcer\Handler\Dig`
+- `Ante\DnsParcer\Handler\DnsGetRecord`
 
-You can create custom handlers. A valid handler is any class that extends from `Spatie\Dns\Handler\Handler`.
+You can create custom handlers. A valid handler is any class that extends from `Ante\DnsParcer\Handler\Handler`.
 
-A custom handler class can be used by passing it to `useHandlers` on `Spatie\Dns\Dns`.
+A custom handler class can be used by passing it to `useHandlers` on `Ante\DnsParcer\Dns`.
 
 ```php
 $results = $this->dns
@@ -150,16 +150,9 @@ Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTI
 
 If you've found a bug regarding security please mail [security@spatie.be](mailto:security@spatie.be).
 
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Kruikstraat 22, 2018 Antwerp, Belgium.
-
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
 
 ## Credits
-
+- [Ante de Baas](https://github.com/antedebaas)
 - [Harish Toshniwal](https://github.com/introwit)
 - [Tom Witkowski](https://github.com/Gummibeer)
 - [Freek Van der Herten](https://github.com/freekmurze)
