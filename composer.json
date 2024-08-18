@@ -1,5 +1,5 @@
 {
-    "name": "antedebaas/DnsParser",
+    "name": "antedebaas/dns-parser",
     "description": "Retrieve DNS records",
     "keywords": [
         "php",
