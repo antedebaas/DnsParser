@@ -16,6 +16,9 @@ class STSV1 extends V
     public function castId(string $value): int
     {
         preg_match('/id=([0-9]+)/', $value, $matches);
+        if(empty($matches)) {
+            return 0;
+        }
 
         return $this->prepareInt($matches[1]);
     }
