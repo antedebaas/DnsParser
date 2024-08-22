@@ -15,7 +15,7 @@ class SPF1 extends V
 
     public function castValue(string $value): array
     {
-        preg_match_all('/([a-zA-Z0-9:\.-~?]+)+/', $value, $matches);
+        preg_match_all('/([a-zA-Z0-9_\:\.\-\~?]+)+/', $value, $matches);
         if(count($matches) < 1) {
             return [];
         }
